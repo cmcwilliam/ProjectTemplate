@@ -85,14 +85,6 @@
             </div>
 
             <div class="form-group">
-              <label for="rdoGender" class="control-label col-md-2">Gender</label>
-              <div class="col-md-2">
-            <input id="rdoGenderMale" type="radio" name="rdoGender" class="personalDetails" value="m">Male
-            <input id="rdoGenderFemale" type="radio" name="rdoGender" class="personalDetails" value="f">Female
-            </div>
-            </div>
-
-            <div class="form-group">
               <label for="ncbInput" class="control-label col-md-2">No Claims Bonus(in years)</label>
               <div class="col-md-4">
                 <select id="ddlncb" class="form-control">
@@ -115,23 +107,37 @@
                 <input id="btnNext" value="Next" class="btn btn-default btn-sm btn-success" onclick="showCarDetails()" />
               </div>
             </div>
-
-          </form>
-        </div>
-      </div>
-
+            
       <!-- WRAP CAR DETAILS FORM IN CHILD PANEL -->
       <div id="dvCarDetails" class="dvCarDetails">
-        <div class="form-group">
+
+      <div class="form-group">
+              <label for="ManufacturerInput" class="control-label col-md-2">Manudacturer</label>
               <div class="col-md-4">
-                <input id="btnNext" value="Next" class="btn btn-default btn-sm btn-success" onclick="showCarDetails()" />
+                <select id="ddlManufacturer" class="form-control">
+              <option>Select</option>
+              <option>Audi</option>
+              <option>BMW</option>
+              <option>Citroen</option>
+              <option>Mini</option>
+              <option>Toyta</option>                                                       
+               </select>
+               </div>
+            </div>
+
+            <div class="form-group">
+              <label for="modelInput" class="control-label col-md-2">Model</label>
+              <div class="col-md-4">
+                <input id="txtmodel" type="text" name="modelInput" class="form-control carDetails" placeholder="Your Model" />
               </div>
             </div>
 
-          </form>
-        </div>
-      </div>
-
+            <div class="form-group">
+              <label for="carageInput" class="control-label col-md-2">Car Age</label>
+              <div class="col-md-4">
+                <input id="numbercarage" type="number" name="carageInput" class="form-control carDetails" placeholder="Model Age" />
+              </div>
+            </div>
         <!-- Code for the car details section to be added here -->
       </div>
 
